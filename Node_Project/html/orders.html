@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="../css/style.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+	<body onload="listTask()">
+		<nav>
+			<section class="notification">
+				<section class="nav_left">
+					<div class="logo_text">
+						<img src="../images/pizza.jpeg" class="cs_logo" /><span
+							class="cs_text"
+						>
+							Pizza
+							<span class="color_diff"> Lover</span></span
+						>
+					</div>
+					<div style="margin-top: -0.4rem">|</div>
+					<a class="hover_effect home" href="./index.html">Home</a>
+					<a class="hover_effect post" href="./getpizza.html"
+						>Get your pizza</a
+					>
+					<a class="hover_effect profile" href="./orders.html"
+						>Orders</a
+					>
+				</section>
+			</section>
+		</nav>
+		<main>
+			<section class="order_section">
+				<h1>Orders</h1>
+				<h2>
+					You have recevied
+					<span class="number_of_ord"></span> order(s)
+				</h2>
+				<section class="order_section_content"></section>
+				<img src='../images/reload.gif' class='gif_img_orders'>
+			</section>
+		</main>
+	</body>
+	<script src="../js/order.js"></script>
+</html>

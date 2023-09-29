@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="../css/style.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+	<body>
+		<nav>
+			<section class="notification">
+				<section class="nav_left">
+					<div class="logo_text">
+						<img src="../images/pizza.jpeg" class="cs_logo" /><span
+							class="cs_text"
+						>
+							Pizza
+							<span class="color_diff"> Lover</span></span
+						>
+					</div>
+					<div style="margin-top: -0.4rem">|</div>
+					<a class="hover_effect home" href="./index.html">Home</a>
+					<a class="hover_effect post" href="./getpizza.html"
+						>Get your pizza</a
+					>
+					<a class="hover_effect profile" href="./orders.html"
+						>Orders</a
+					>
+				</section>
+			</section>
+		</nav>
+		<main>
+			<section class="pizza_section">
+				<section class="pizza_section_header">
+					<h1>Get Your Pizza</h1>
+					<h2>Create your own pizza and submit your order</h2>
+					<div class="error_msg">
+						<ul>
+							<li id="style-error">Select a style</li>
+							<li id="crusts-error">Select a crust</li>
+							<li id="name-error">Enter your name</li>
+							<li id="address-error">Enter your address</li>
+						</ul>
+					</div>
+				</section>
+				<section class="pizza_section_content">
+					<aside class="pizza_section_left">
+						<div class="container">
+							<h2>Pizza Order Form</h2>
+							<form>
+								<label for="style">Style:</label>
+								<select id="piz_style" name="style">
+									<option value="Select">-Select-</option>
+									<option value="Hawaiian">Hawaiian</option>
+									<option value="Pepperoni">Pepperoni</option>
+									<option value="Canadian">Canadian</option>
+									<option value="Supreme">Supreme</option>
+									<option value="Cheese">Cheese</option>
+									<option value="Margherita">
+										Margherita
+									</option>
+								</select>
+
+								<label for="crust">Crust:</label>
+								<select id="crust" name="crust">
+									<option value="Select">-Select-</option>
+									<option value="original">Original</option>
+									<option value="thin-crust">
+										Thin Crust
+									</option>
+									<option value="Glutton-free">
+										Glutton Free
+									</option>
+								</select>
+
+								<label for="extra-cheese"
+									>Add Extra Cheese:</label
+								>
+								<input
+									type="checkbox"
+									id="extra-cheese"
+									name="extra-cheese"
+								/>
+
+								<label for="name">Name:</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									placeholder="Enter your name"
+								/>
+								<label for="name">Address:</label>
+								<input
+									type="text"
+									id="address"
+									name="address"
+									placeholder="Enter your address"
+								/>
+
+								<button type="submit" id="place_order">
+									Place Order
+								</button>
+							</form>
+						</div>
+					</aside>
+					<aside class="pizza_section_right">
+						<img src="../images/select.jpg" id="pizzaImage" />
+					</aside>
+				</section>
+			</section>
+		</main>
+	</body>
+	<script src="../js/script.js"></script>
+</html>

@@ -1,0 +1,279 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 68.5%;
+	/* font-family: ; */
+	/* font-family: "Courier New", Courier, monospace; */
+	/* font-family: "Poppins", sans-serif; */
+	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: "Inter", sans-serif;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-color: #fff;
+}
+/*----------------------------------Navigation--------------------------*/
+nav {
+	width: 90%;
+	margin: 1rem auto;
+	padding-top: 0.5rem;
+	/* border-bottom: 1px solid black; */
+}
+.navigation {
+	width: 90%;
+	margin: 0 auto;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	color: #5c5c5c;
+	position: relative;
+}
+nav a {
+	color: #000;
+	text-decoration: none;
+}
+.nav_left {
+	display: flex;
+	font-size: 2.3rem;
+	gap: 4rem;
+	align-items: center;
+	/* order: -1; */
+}
+.logo_text {
+	position: relative;
+	/* margin-top: 0.5rem; */
+	margin-right: 12rem;
+	width: 10rem;
+}
+.cs_text {
+	color: #000;
+	position: absolute;
+	top: 2.2rem;
+	width: 20rem;
+	margin-left: 1rem;
+}
+.cs_text .color_diff {
+	color: #e67e22;
+}
+.cs_logo {
+	width: 6.5rem;
+	height: 6.5rem;
+	mix-blend-mode: multiply;
+}
+.hover_effect {
+	/* border-bottom: 2px solid black; */
+	padding-bottom: 0.3rem;
+	cursor: pointer;
+	transition: all 0.1s;
+	/* trans */
+}
+.hover_effect:hover {
+	border-bottom: 1px solid #eb984e;
+}
+.active {
+	border-bottom: 1px solid #eb984e;
+}
+/*--------------Display and hide-------------------*/
+#style-error {
+	display: none;
+}
+#crusts-error {
+	display: none;
+}
+#name-error {
+	display: none;
+}
+#address-error {
+	display: none;
+}
+/*----------------------------Main----------------------*/
+/*home section-------------------------------------*/
+.home_section {
+	width: 80%;
+	margin: 3rem auto;
+	display: flex;
+	gap: 2rem;
+}
+.home_left {
+	padding-top: 3rem;
+}
+.home_left h1 {
+	font-size: 3.2rem;
+	margin-bottom: 1rem;
+}
+.home_left h2 {
+	color: #e98b38;
+	font-size: 1.6rem;
+	font-weight: 200;
+}
+.home_right img {
+	width: 400px;
+	height: 400px;
+}
+.order_btn {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font-size: 1.3rem;
+	margin-top: 2rem;
+	cursor: pointer;
+	/* margin-left: 1rem; */
+	width: 10rem;
+	height: 3rem;
+	border-radius: 0.7rem;
+	text-align: center;
+	padding-top: 0.8rem;
+	background-color: #eea564;
+	transition: all 0.3s;
+}
+.order_btn:hover {
+	background-color: #e67e22;
+}
+/*----------------------------Get your pizza section -------------------*/
+.pizza_section {
+	width: 80%;
+	margin: 0 auto;
+}
+/*----header------*/
+.pizza_section h1 {
+	font-size: 3.8rem;
+	font-weight: 500;
+	color: #e67e22;
+}
+.pizza_section h2 {
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+.error_msg {
+	font-size: 1.3rem;
+	font-weight: 200;
+	color: #b8651b;
+	margin: 2rem 0 2rem 2rem;
+}
+.pizza_section_content {
+	display: flex;
+	gap: 5rem;
+}
+/*----------------------------Pizza section left----------------------*/
+.container {
+	/* max-width: 70rem; */
+	width: 50rem;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f0f0f0;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container h2 {
+	font-size: 2rem;
+	color: #b8651b;
+}
+label {
+	display: block;
+	margin-bottom: 8px;
+}
+select,
+input {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 16px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+}
+#extra-cheese {
+	/* padding: -20rem; */
+	/* margin-top: -50rem; */
+	margin-left: -22.5rem;
+}
+#place_order {
+	font-size: 1.3rem;
+	cursor: pointer;
+	width: 10rem;
+	height: 3rem;
+	border-radius: 0.7rem;
+	text-align: center;
+	padding-top: 0.3rem;
+	background-color: #eea564;
+	transition: all 0.3s;
+}
+#place_order:hover {
+	background-color: #e67e22;
+}
+/*----------------------------Pizza section right----------------------*/
+/* .pizza_section_right img{
+	width: 600;
+	height: 600;
+	background-color: red;
+} */
+.pizza_section_right img {
+	margin-left: 6rem;
+	width: 30rem;
+	height: 30rem;
+}
+/*--------------------------------------Order Section-------------*/
+.order_section {
+	width: 80%;
+	margin: 2rem auto;
+}
+.order_section h1 {
+	font-size: 3.6rem;
+	color: #b8651b;
+	font-weight: 500;
+}
+.order_section_content {
+	margin-top: 2rem;
+}
+.order_box {
+	display: inline-block;
+	width: 20rem;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 2rem;
+	filter: blur();
+	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.25);
+	margin-right: 5rem;
+	margin-bottom: 5rem;
+}
+.order_box h2 {
+	font-size: 2.4rem;
+	font-weight: 400;
+	margin-bottom: 1rem;
+	color: #e67e22;
+}
+.order_box h3 {
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+.order_box .remove_btn {
+	font-size: 1.2rem;
+	cursor: pointer;
+	width: 7rem;
+	height: 3rem;
+	border-radius: 0.7rem;
+	text-align: center;
+	padding-top: 0.5rem;
+	margin-top: 1rem;
+	background-color: #eea564;
+	transition: all 0.3s;
+}
+.order_box .remove_btn:hover {
+	background-color: #e67e22;
+}
+/*---------------GIF----------------*/
+.gif_img {
+	width: 10rem;
+	margin: 5rem 65rem;
+}
+.success_text{
+	font-size: 2rem;
+	margin: 5rem 65rem;
+}
+.gif_img_orders{
+	display: none;
+	width: 10rem;
+	margin: 5rem 50rem;
+}
